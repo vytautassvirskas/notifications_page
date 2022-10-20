@@ -1,0 +1,29 @@
+:root {
+    --Red: rgb(246, 83, 81);
+    --Blue: rgb(10, 49, 123);
+    --White: rgb(255, 255, 255);
+    --VeryLightGrayishBlue: rgb(247, 250, 253);
+    --LightGrayishBlue1: rgb(229, 239, 250);
+    --LightGrayishBlue2: rgb(221, 231, 238);
+    --GrayishBlue: rgb(147, 157, 174);
+    --DarkGrayishBlue: rgb(94, 103, 120);
+    --VeryDarkBlue: rgb(28, 32, 43);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+body{
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    width: 80%;
+    margin: 50px auto;
+    background-color: var(--VeryLightGrayishBlue);
+}
+
+.notification{
+    width: 1100px;
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 15px 15px 10px 15px;
+    
+}
