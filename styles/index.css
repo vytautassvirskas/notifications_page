@@ -23,6 +23,9 @@ body{
 .hover-blue:hover{
     color: var(--Blue);
 }
+.hover-lightBlue:hover{
+    background-color: var(--LightGrayishBlue1) ;
+}
 
 .notification{
     width: 800px;
@@ -66,9 +69,18 @@ body{
 }
 .notification__card{
     display: flex;
+    flex-direction: column;
     padding: 20px;
-    background-color: var(--VeryLightGrayishBlue);
+    /* background-color: var(--VeryLightGrayishBlue); */
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+.notification__card--unread{
+    background-color: var(--VeryLightGrayishBlue);
+}
+
+.notification__card-main{
+    display: flex;
 }
 .notification__img-wrapper{
     width:50px;
@@ -86,10 +98,15 @@ body{
     color: var(--VeryDarkBlue);
 }
 
-.notification__type{
+.notification__type-post{
     font-weight: 700;
     color: var(--DarkGrayishBlue);
 }
+.notification__type-group{
+    font-weight: 700;
+    color: var(--Blue);
+}
+
 .notification__unread{
     display: inline-block;
     width: 10px;
@@ -100,4 +117,16 @@ body{
 }
 .notification__age{
     color: var(--GrayishBlue)
+}
+.notification__message{
+    margin: 10px 0 0 70px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid var(--LightGrayishBlue2);
+    color: var(--DarkGrayishBlue);
+
+}
+.notification__post-image-wrapper{
+    width: 50px;
+    margin-left: auto;
 }
