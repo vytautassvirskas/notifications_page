@@ -7,6 +7,10 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/index.css">
   <title>Frontend Mentor | Notifications page</title>
 </head>
@@ -14,8 +18,11 @@
 <body>
   <div class="notification">
     <div class="notification__top">
-      <h1 class="notification__heading">Notifications <span class="notification__count">3</span></h1>
-      <p class="notification__button"> Mark all as read</p>
+      <div class="notification__heading-count-wrapper">
+        <h1 class="notification__heading">Notifications</h1>
+        <span class="notification__count">3</span>
+      </div>
+      <button class="notification__button cursor hover-blue"> Mark all as read</button>
     </div>
     <div class="notification__card notification__card--unread">
       <div class="notification__img-wrapper">
@@ -24,37 +31,33 @@
       <div class="notification__information">
         <div class="notification__text-wrapper">
           <p class="notification__text">
-            <span class="notification__author">Mark Webber</span>
+            <span class="notification__author cursor hover-blue">Mark Webber</span>
             reacted to your recent post
-            <span class="notification__type">My first tournament today!</span>
-          <div class="notification__unread"></div>
+            <span class="notification__type cursor hover-blue">My first tournament today!</span>
+            <span class="notification__unread"></span>
           </p>
           <span class="notification__age">1m ago</span>
         </div>
       </div>
     </div>
 
-    <!-- <div class="notification__card">
+    <!--   <div class="notification__card notification__card--unread">
       <div class="notification__img-wrapper">
-        <img src="./images/avatar-1.jpg" alt="avatar" class="notification__author-img">
+        <img src="./assets/images/avatar-mark-webber.webp" alt="author-photo" class="notification__author-img">
       </div>
       <div class="notification__information">
         <div class="notification__text-wrapper">
           <p class="notification__text">
-            <span class="notification__author"></span>
-            tekstas
-            <span class="notification__type"></span>
-          <div class="notification__unread"></div>
+            <span class="notification__author cursor hover-blue">Mark Webber</span>
+            reacted to your recent post
+            <span class="notification__type cursor hover-blue">My first tournament today!</span>
+            <span class="notification__unread"></span>
           </p>
-          <span class="notification__age"></span>
-
+          <span class="notification__age">1m ago</span>
         </div>
-        <div class="notification__picture-wrapper">
-          <img class="notification__picture" src="" alt="">
-        </div>
+        <p class="notification__message cursor">message</p>
       </div>
-
-    </div> -->
+    </div>-->
   </div>
 
 
